@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1780167447552,
+      "tag": "0000_wise_winter_soldier",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1780167600000,
+      "tag": "0001_add_exit_date_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1780168500000,
+      "tag": "0002_fix_account_provider_account_id",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --background: #fff8ec;
+  --foreground: #18212f;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #090b17;
+  --foreground: #f6f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(255, 183, 77, 0.22), transparent 30%),
+    linear-gradient(225deg, rgba(0, 210, 255, 0.16), transparent 30%),
+    var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(15, 241, 255, 0.2), transparent 28%),
+    linear-gradient(135deg, #090b17 0%, #11182f 45%, #180b2b 100%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-panel {
+    box-shadow: none !important;
+    border: 1px solid #d7dce5 !important;
+  }
+}
